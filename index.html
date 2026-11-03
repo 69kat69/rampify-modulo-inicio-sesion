@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rampify </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- el contenedor temporal (cambiar despues de presentar) -->
+  <main class="tarjeta-login">
+
+    <!-- rampify nombre -->
+    <header class="marca">
+      <div>
+        <b>Rampify</b>
+        <small>Accesibilidad Urbana</small>
+      </div>
+    </header>
+
+    <!-- Formulario  -->
+    <h1>Iniciar sesión</h1>
+    <p class="texto-intro">Ingresa con una cuenta activa de Rampify.</p>
+
+    <form id="formularioLogin" novalidate>
+      <label for="correo">Correo electrónico</label>
+      <input
+        id="correo"
+        name="correo"
+        type="email"
+        autocomplete="username"
+        required
+      >
+
+      <label for="contra">Contraseña</label>
+      <div class="grupo-contra">
+        <input
+          id="contraseña"
+          name="contraseña"
+          type="password"
+          autocomplete="current-password"
+          required
+        >
+        <button id="botonMostrar" type="button" aria-label="Mostrar contraseña">
+          Mostrar
+        </button>
+      </div>
+
+      <!-- q sale despues de darle -->
+      <p id="mensaje" class="mensaje" role="alert" aria-live="polite"></p>
+      <button class="boton-principal" type="submit">Iniciar sesión</button>
+    </form>
+
+  </main>
+<!-- conexion con el js pa -->
+  <script src="login.js"></script>
+</body>
+</html>

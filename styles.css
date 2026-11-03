@@ -1,0 +1,120 @@
+/* colores */
+:root {
+  --color-verde: #193b28;
+  --color-fondo: #f4f7f5;
+  --color-texto: #202b25;
+  --color-suave: #78847d;
+  --color-borde: #dce5df;
+}
+
+/* estilos gen */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #e8f0eb, var(--color-fondo));
+  color: var(--color-texto);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* formulario tarjeta */
+.tarjeta-login {
+  width: min(100%, 420px);
+  padding: 32px;
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-radius: 14px;
+  box-shadow: 0 16px 50px #193b2814;
+}
+
+/* Rampify */
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.marca b,
+.marca small {
+  display: block;
+}
+
+.marca small {
+  margin-top: 3px;
+  color: var(--color-suave);
+  font-size: 12px;
+}
+
+/* titulos y textos */
+h1 {
+  margin: 36px 0 7px;
+  font-size: 24px;
+}
+
+.texto-intro {
+  margin: 0 0 24px;
+  color: var(--color-suave);
+  font-size: 14px;
+}
+
+/*correo y contraseña */
+label {
+  display: block;
+  margin: 15px 0 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  padding: 0 11px;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  color: var(--color-texto);
+}
+
+input:focus {
+  outline: 2px solid #8eb39b;
+  border-color: var(--color-verde);
+}
+
+.grupo-contra {
+  display: flex;
+  gap: 7px;
+}
+
+.grupo-contra button {
+  border: 0;
+  background: none;
+  color: var(--color-verde);
+  cursor: pointer;
+}
+
+/* Mensaje y botnn pa enviar */
+.mensaje {
+  min-height: 18px;
+  color: #a32c2c;
+  font-size: 13px;
+}
+
+.mensaje.correcto {
+  color: #287245;
+}
+
+.boton-principal {
+  width: 100%;
+  height: 44px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--color-verde);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
